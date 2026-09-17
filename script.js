@@ -130,6 +130,29 @@ if (form) {
 }
 
 
+// =========================
+// MUSIC
+// =========================
+
+const musicButton = document.getElementById("musicButton");
+const music = document.getElementById("backgroundMusic");
+
+music.volume = 0.5;
+
+let musicPlaying = false;
+
+musicButton.addEventListener("click", () => {
+  if (musicPlaying) {
+    music.pause();
+    musicPlaying = false;
+    musicButton.textContent = "♪";
+  } else {
+    music.play();
+    musicPlaying = true;
+    musicButton.textContent = "Ⅱ";
+  }
+});
+
 https://meyirkhan07.github.io/DannaNurasyl/music.mp3
   }
 });
