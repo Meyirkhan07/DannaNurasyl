@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5efe5">
+  <title>Нұрасыл & Дана — Тойға шақыру</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600&family=Marck+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="hero reveal">
+      <div class="ornament top-ornament">᛫ ❦ ᛫</div>
+      <p class="eyebrow">ҚУАНЫШЫМЫЗҒА ОРТАҚ БОЛЫҢЫЗДАР</p>
+      <h1>Нұрасыл <span>&amp;</span> Дана</h1>
+
+<img
+  class="couple-photo"
+  src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85"
+  alt="Жұптың суреті"
+>
+
+<div class="divider"><i></i><b>❦</b><i></i></div>
+<p class="date">17 ҚАЗАН 2026</p>
+      <div class="floral">❧</div>
+    </section>
+
+    <section class="invitation reveal">
+      <p class="section-kicker">ҚҰРМЕТТІ ҚОНАҚТАР!</p>
+      <h2>Ақ ниетпен<br>күлімдеп келіңіздер</h2>
+      <p class="body-copy">
+        Сіздерді қуанышымызға ортақтасып, ақ дастарханымыздың қадірлі
+        қонағы болуға шақырамыз. Бұл ерекше кеште бірге болып,
+        ізгі тілектеріңізді арнасаңыздар біз үшін үлкен қуаныш.
+      </p>
+      <div class="small-ornament">◇</div>
+    </section>
+
+    <section class="countdown-section reveal">
+      <p class="section-kicker">ТОЙҒА ДЕЙІН</p>
+      <div class="countdown">
+        <div class="count-box"><strong id="days">00</strong><span>күн</span></div>
+        <div class="count-box"><strong id="hours">00</strong><span>сағат</span></div>
+        <div class="count-box"><strong id="minutes">00</strong><span>минут</span></div>
+        <div class="count-box"><strong id="seconds">00</strong><span>секунд</span></div>
+      </div>
+    </section>
+
+    <section class="program reveal">
+      <p class="section-kicker">КЕШ БАҒДАРЛАМАСЫ</p>
+      <div class="timeline">
+        <div class="event"><span>17:00</span><div><h3>Беташардың басталуы</h3><p>Келіннің ибалы сәлемін көріп, үлкендердің ақ батасын алатын қасиетті сәт.</p></div></div>
+        <div class="event"><span>18:00</span><div><h3>Жастар тойының басталуы</h3><p>Ақ дастархан басында қуанышымызды бірге бөлісу</p></div></div>
+      </div>
+    </section>
+
+    <section class="location reveal">
+      <p class="section-kicker">МЕКЕН-ЖАЙЫМЫЗ</p>
+      <h2>«Ақмешіт»<br>мейрамханасы</h2>
+      <p class="address">Қызылорда қаласы,<br>Торайғыров көшесі, 155В</p>
+      <a class="map-button" target="_blank" rel="noopener"
+         href="https://2gis.kz/kyzylorda/geo/70000001103591830">
+        Картадан көру <span>↗</span>
+      </a>
+    </section>
+
+    <section class="rsvp reveal" id="rsvp">
+      <p class="section-kicker">ҚАТЫСУЫҢЫЗДЫ РАСТАУ</p>
+      <h2>Сіздерді асыға күтеміз</h2>
+      <p class="body-copy">Тойға қатысуыңызды алдын ала хабарлауыңызды сұраймыз.</p>
+
+      <form id="rsvpForm">
+        <label>
+          <span>Аты-жөніңіз</span>
+          <input id="guestName" type="text" placeholder="Атыңызды жазыңыз" required>
+        </label>
+
+        <fieldset>
+          <legend>Тойға келе аласыз ба?</legend>
+          <label class="radio"><input type="radio" name="attendance" value="Жалғыз барамын" required><span>Иә, жалғыз барамын</span></label>
+          <label class="radio"><input type="radio" name="attendance" value="Жұбайыммен барамын"><span>Иә, жұбайыммен барамын</span></label>
+          <label class="radio"><input type="radio" name="attendance" value="Келе алмаймын"><span>Жоқ, өкінішке орай келе алмаймын</span></label>
+        </fieldset>
+
+        <button type="submit">Жіберу</button>
+        <p class="form-note">Жауап беру үшін батырманы басыңыз.</p>
+        <div class="success" id="success">Рақмет! Жауабыңыз қабылданды. 🤍</div>
+      </form>
+    </section>
+
+    <footer class="footer reveal">
+      <div class="divider"><i></i><b>❦</b><i></i></div>
+      <h2>Тойымызға қош<br>келдіңіздер!</h2>
+      <p>Нұрасыл &amp; Дана</p>
+    </footer>
+  </main>
+
+  <button class="music-button" id="musicButton" aria-label="Музыканы қосу">♪</button>
+  <script src="script.js"></script>
+</body>
+</html>
