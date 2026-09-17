@@ -125,6 +125,25 @@ if (form) {
       button.textContent = "Жіберу";
 
       alert("Қате орын алды. Қайтадан көріңіз.");
+      const musicButton = document.getElementById("musicButton");
+
+const music = new Audio("music.mp3");
+music.loop = true;
+music.volume = 0.5;
+
+let musicPlaying = false;
+
+musicButton.addEventListener("click", () => {
+  if (musicPlaying) {
+    music.pause();
+    musicPlaying = false;
+    musicButton.textContent = "♪";
+  } else {
+    music.play();
+    musicPlaying = true;
+    musicButton.textContent = "Ⅱ";
+  }
+});
     }
   });
 }
