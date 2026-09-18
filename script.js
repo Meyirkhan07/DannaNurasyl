@@ -126,5 +126,30 @@ if (form) {
 
       alert("Қате орын алды. Қайтадан көріңіз.");
     }
+
+    // =========================
+// MUSIC
+// =========================
+
+const musicButton = document.getElementById("musicButton");
+const music = document.getElementById("backgroundMusic");
+
+if (musicButton && music) {
+  music.volume = 0.5;
+
+  musicButton.addEventListener("click", async () => {
+    if (music.paused) {
+      try {
+        await music.play();
+        musicButton.textContent = "Ⅱ";
+      } catch (error) {
+        console.error("Музыка не запустилась:", error);
+      }
+    } else {
+      music.pause();
+      musicButton.textContent = "♪";
+    }
+  });
+}
   });
 }
