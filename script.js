@@ -127,28 +127,28 @@ if (form) {
       alert("Қате орын алды. Қайтадан көріңіз.");
     }
 
-    // =========================
+// =========================
 // MUSIC
 // =========================
 
 const musicButton = document.getElementById("musicButton");
-const music = document.getElementById("backgroundMusic");
+const backgroundMusic = document.getElementById("backgroundMusic");
 
-if (musicButton && music) {
-  music.volume = 0.5;
-
+if (musicButton && backgroundMusic) {
   musicButton.addEventListener("click", async () => {
-    if (music.paused) {
+    if (backgroundMusic.paused) {
       try {
-        await music.play();
+        await backgroundMusic.play();
         musicButton.textContent = "Ⅱ";
       } catch (error) {
-        console.error("Музыка не запустилась:", error);
+        console.error("Ошибка воспроизведения музыки:", error);
       }
     } else {
-      music.pause();
+      backgroundMusic.pause();
       musicButton.textContent = "♪";
     }
+  });
+}
   });
 }
   });
