@@ -466,19 +466,24 @@ form button:hover {
 
 .music-button {
   position: fixed;
-  right: max(18px, calc((100vw - 560px) / 2 + 18px));
+  right: 18px;
   bottom: 18px;
+
   width: 48px;
   height: 48px;
+
   border: 1px solid var(--gold);
   border-radius: 50%;
+
   background: rgba(251, 247, 240, 0.95);
   color: var(--ink);
+
   font-size: 21px;
   cursor: pointer;
-  z-index: 5;
-}
 
+  z-index: 9999;
+  pointer-events: auto;
+}
 /* =========================
    SCROLL ANIMATION
 ========================= */
