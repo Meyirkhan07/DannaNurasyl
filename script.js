@@ -13,6 +13,8 @@ function updateCountdown() {
   const minutes = document.getElementById("minutes");
   const seconds = document.getElementById("seconds");
 
+  if (!days || !hours || !minutes || !seconds) return;
+
   if (difference <= 0) {
     days.textContent = "00";
     hours.textContent = "00";
@@ -87,6 +89,7 @@ if (form) {
     e.preventDefault();
 
     const name = document.getElementById("guestName").value.trim();
+
     const attendance = document.querySelector(
       'input[name="attendance"]:checked'
     );
@@ -126,8 +129,11 @@ if (form) {
 
       alert("Қате орын алды. Қайтадан көріңіз.");
     }
+  });
+}
 
-    // =========================
+
+// =========================
 // MUSIC
 // =========================
 
@@ -149,7 +155,5 @@ if (musicButton && music) {
       music.pause();
       musicButton.textContent = "♪";
     }
-  });
-}
   });
 }
