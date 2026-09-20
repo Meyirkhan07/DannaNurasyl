@@ -484,11 +484,8 @@ form button:hover {
 ========================= */
 
 .reveal {
-  opacity: 0;
-  transform: translateY(22px);
-  transition:
-    opacity 0.7s ease,
-    transform 0.7s ease;
+  opacity: 1;
+  transform: none;
 }
 
 .reveal.visible {
