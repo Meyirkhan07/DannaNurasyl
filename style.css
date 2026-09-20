@@ -488,11 +488,6 @@ form button:hover {
   transform: none;
 }
 
-.reveal.visible {
-  opacity: 1;
-  transform: none;
-}
-
 /* =========================
    COUPLE PHOTO
 ========================= */
