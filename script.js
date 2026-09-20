@@ -127,26 +127,6 @@ if (form) {
       alert("Қате орын алды. Қайтадан көріңіз.");
     }
 
-// =========================
-// MUSIC
-// =========================
-
-const musicButton = document.getElementById("musicButton");
-const backgroundMusic = document.getElementById("backgroundMusic");
-
-if (musicButton && backgroundMusic) {
-  musicButton.addEventListener("click", async () => {
-    if (backgroundMusic.paused) {
-      try {
-        await backgroundMusic.play();
-        musicButton.textContent = "Ⅱ";
-      } catch (error) {
-        console.error("Ошибка воспроизведения музыки:", error);
-      }
-    } else {
-      backgroundMusic.pause();
-      musicButton.textContent = "♪";
-    }
   });
 }
   });
