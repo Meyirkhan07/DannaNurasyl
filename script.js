@@ -13,8 +13,6 @@ function updateCountdown() {
   const minutes = document.getElementById("minutes");
   const seconds = document.getElementById("seconds");
 
-  if (!days || !hours || !minutes || !seconds) return;
-
   if (difference <= 0) {
     days.textContent = "00";
     hours.textContent = "00";
@@ -128,29 +126,30 @@ if (form) {
 
       alert("Қате орын алды. Қайтадан көріңіз.");
     }
-  });
-}
 
-
-// =========================
+    // =========================
 // MUSIC
 // =========================
 
 const musicButton = document.getElementById("musicButton");
-const backgroundMusic = document.getElementById("backgroundMusic");
+const music = document.getElementById("backgroundMusic");
 
-if (musicButton && backgroundMusic) {
+if (musicButton && music) {
+  music.volume = 0.5;
+
   musicButton.addEventListener("click", async () => {
-    if (backgroundMusic.paused) {
+    if (music.paused) {
       try {
-        await backgroundMusic.play();
+        await music.play();
         musicButton.textContent = "Ⅱ";
       } catch (error) {
-        console.error("Ошибка воспроизведения музыки:", error);
+        console.error("Музыка не запустилась:", error);
       }
     } else {
-      backgroundMusic.pause();
+      music.pause();
       musicButton.textContent = "♪";
     }
+  });
+}
   });
 }
